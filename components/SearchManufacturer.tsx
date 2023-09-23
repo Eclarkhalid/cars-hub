@@ -9,8 +9,8 @@ import Image from 'next/image'
 import { manufacturers } from '@/constants'
 
 const SearchManufacturer = ({
-  manufacturer, setManufacturer
-}: SearchManufacturerProps) => {
+  manufacturer, setManuFacturer
+}: SearchManuFacturerProps) => {
 
   const [query, setQuery] = useState('');
 
@@ -20,7 +20,7 @@ const SearchManufacturer = ({
   ))
   return <>
     <div className="search-manufacturer">
-      <Combobox value={manufacturer} onChange={setManufacturer}>
+      <Combobox value={manufacturer} onChange={setManuFacturer}>
         <div className="relative w-full">
           <Combobox.Button className={'absolute top-[14px]'}>
             <Image src={'/car-logo.svg'} width={20} height={20} className='ml-4' alt='car logo' />
